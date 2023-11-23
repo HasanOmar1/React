@@ -3,13 +3,9 @@ import Balloon from '../Balloon/Balloon'
 
 export default function Child({children}) {
   return (
-    <div className="">
+    <div>
         <h3 className='names'>{children.name}</h3>
-
-      <div className='container'>
-        <div className={children.color}></div>
-
-    </div>
+        <Balloon className={children.color}></Balloon>
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function Balloon({children}) {
+export default function Balloon({className}) {
   return (
-    <div className={children}></div>
+    <div className={className}></div>
   )
 }

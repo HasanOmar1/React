@@ -1,8 +1,7 @@
 import React from 'react'
 import Child from '../Child/Child'
-import Balloon from '../Balloon/Balloon'
 
-export default function Mother({children}) {
+export default function Mother() {
     const kids= [
         { name: 'Ori', color: 'red' },
         { name: 'Ron', color: 'blue' },
@@ -13,13 +12,12 @@ export default function Mother({children}) {
  
 
   return (
-    <div >
+    <div>
         <h1>A Tale of Five Balloons</h1>
         <div className="container">
           {kids.map((kid)=>{
             return <Child>{kid}</Child>
           })}
-
         </div>
 
 
