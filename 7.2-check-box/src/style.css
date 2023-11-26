@@ -1,0 +1,12 @@
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+  }
+  
+.container{
+    display: flex;
+}
+p{
+    margin-left: 10px;
+}
