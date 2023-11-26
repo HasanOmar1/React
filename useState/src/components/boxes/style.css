@@ -1,0 +1,40 @@
+.box1{
+    background-color: aqua;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box2{
+    background-color:blueviolet;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box3{
+    background-color:yellowgreen;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box4{
+    background-color:rgb(19, 166, 211);
+    width: 80%;
+    height: 30%;
+}
+
+.facebookIcon{
+    font-size: 50px;
+    color: black;
+}
