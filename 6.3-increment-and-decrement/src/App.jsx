@@ -5,13 +5,14 @@ import './style.css'
 function App() {
   const [count, setCount] = useState(0)
 
+  
   function increment(){
     if(count < 10 && count >= -10){
     setCount(count => count + 1)
+
     }
     
   }
-  
   function decrement(){
     if(count <= 10 && count > -10){
     setCount(count => count - 1)
