@@ -78,7 +78,7 @@ export default function Form() {
         <h2>Last Name = {lastName} </h2>
         <h2>Age = {age} </h2>
         <h2>Message = {message} </h2>
-        <div className="btns">
+        <div>
           <button onClick={handleBackClick}>Back</button>
           <button onClick={handleSendForm}>Send Form</button>
         </div>
