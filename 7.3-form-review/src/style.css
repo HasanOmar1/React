@@ -1,0 +1,36 @@
+input{
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+textarea{
+    margin-top: 20px;
+
+}
+
+select{
+    margin-top: 10px;
+}
+
+.message{
+    margin-top: 2rem;
+}
+
+input[type=submit]{
+    padding: 20px;
+    margin-top: 20px;
+}
+
+button{
+    margin-left: 10px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
+
+.display{
+    display: block;
+}
