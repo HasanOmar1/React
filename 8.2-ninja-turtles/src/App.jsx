@@ -4,18 +4,22 @@ import Card from "./components/Card";
 import { data } from "./components/data";
 
 function App() {
-  // const [name, setName] = useState(getNames);
+  const [foodImg, setFoodImg] = useState("");
 
   const card = data.map((info, i) => {
     const foodArr = info.pizzaToppings;
     const foodName = foodArr.map((food, i) => {
+      function handleImg() {
+        setFoodImg(() => {
+          return <img src={food.img} alt={food.name} />;
+        });
+      }
       return (
-        <button key={i} className="btns">
+        <button key={i} className="btns" onClick={handleImg}>
           {food.name}
         </button>
       );
     });
-    const foodImg = foodArr.map((food) => food.img);
     return (
       <div className="container" key={i}>
         <Card name={info.name} img={info.img} food={foodName} />
@@ -23,7 +27,7 @@ function App() {
     );
   });
 
-  console.log(data);
+  // console.log(data);
 
   return (
     <>
@@ -31,6 +35,10 @@ function App() {
       <h2>Order Pizza with the turtles</h2>
       <div className="cards-container">{card}</div>
       <h1>Our order:</h1>
+      <div className="food-img">
+        {/* <img src={foodImg} /> */}
+        {foodImg}
+      </div>
     </>
   );
 }
