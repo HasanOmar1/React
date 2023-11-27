@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+}
+
+.before-1990{
+    padding-left: 200px;
+}
+
+ul{
+padding: 30px;
+}
