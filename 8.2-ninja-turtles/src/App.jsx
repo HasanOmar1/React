@@ -11,7 +11,12 @@ function App() {
     const foodName = foodArr.map((food, i) => {
       function handleImg() {
         setFoodImg(() => {
-          return <img src={food.img} alt={food.name} />;
+          return (
+            <div className="food-container">
+              <p>{food.name}</p>
+              <img src={food.img} alt={food.name} />
+            </div>
+          );
         });
       }
       return (
@@ -35,10 +40,7 @@ function App() {
       <h2>Order Pizza with the turtles</h2>
       <div className="cards-container">{card}</div>
       <h1>Our order:</h1>
-      <div className="food-img">
-        {/* <img src={foodImg} /> */}
-        {foodImg}
-      </div>
+      <div className="food-img">{foodImg}</div>
     </>
   );
 }

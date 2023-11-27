@@ -4,12 +4,14 @@ h1 , h2{
 
 .container{
     width: 300px;
-    height: 500px;
+    height: 300px;
     background-color: olive;
 }
 
 img{
     width: 200px;
+    height: 120px;
+    width: 100%;
 
 }
 
@@ -27,8 +29,23 @@ img{
 
 .food-img{
 
-    width: 600px;
+    width: 50vw;
+    height: 250px;
+    margin-left: 10vw;
+}
+
+.food-container p{
+    font-size: 2rem;
+}
+.food-container{
     height: 300px;
-    background-color: black;
-    margin-left: 20vw;
+    width: 300px;
+    background-color: darkcyan;
+    border-radius: 50%;
+    padding-top: 10px;
+}
+
+.food-container img{
+    width: 200px;
+    border-radius: 50%;
 }
