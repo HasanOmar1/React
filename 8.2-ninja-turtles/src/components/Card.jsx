@@ -5,7 +5,7 @@ export default function Card({ name, img, food }) {
   return (
     <div>
       <h3>{name}</h3>
-      <img src={img} />
+      <img src={img} alt={name} />
       <h3>Toppings:</h3>
       <div>{food}</div>
     </div>

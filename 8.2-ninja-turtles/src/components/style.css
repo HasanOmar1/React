@@ -28,10 +28,9 @@ img{
 }
 
 .food-img{
-
-    width: 50vw;
+    
+    width: 70vw;
     height: 250px;
-    margin-left: 25vw;
 }
 
 .food-container p{
@@ -43,9 +42,25 @@ img{
     background-color: darkcyan;
     border-radius: 50%;
     padding-top: 10px;
+
+}
+
+.error-img{
+
+    background-color: red;
+
+
 }
 
 .food-container img{
     width: 200px;
     border-radius: 50%;
+}
+
+.btns:hover{
+    color: red;
+}
+
+.error{
+    color: red;
 }
