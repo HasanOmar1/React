@@ -5,7 +5,7 @@ import { data } from "./components/data";
 
 function App() {
   const { message, setMessage } = useState("");
-  const [foodImg, setFoodImg] = useState([]);
+  const [foodImg, setFoodImg] = useState([]); // use setfoodimg({...foodImg, ...})
 
   const card = data.map((info, i) => {
     const foodArr = info.pizzaToppings;
