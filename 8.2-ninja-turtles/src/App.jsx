@@ -2,13 +2,14 @@ import { useState } from "react";
 import "./App.css";
 import Card from "./components/Card";
 import { data } from "./components/data";
+import Ordered from "./components/Ordered";
 
 function App() {
   const [message, setMessage] = useState("");
   const [orderedToppings, setOrderedToppings] = useState([]);
 
   const onClickTopping = (topping) => {
-    if (orderedToppings.length >= 5) {
+    if (orderedToppings.length > 4) {
       setMessage("Max amount of topping!");
       return;
     }
@@ -20,7 +21,6 @@ function App() {
       setMessage(`Already ordered ${topping.name}!`);
       return;
     }
-
     setMessage("");
     setOrderedToppings([...orderedToppings, topping]);
   };
@@ -42,25 +42,7 @@ function App() {
       </div>
       <h1>Our order:</h1>
       <div>
-        <div
-          className={`food-img ${
-            orderedToppings.length > 5 ? "error-img" : ""
-          }`}
-        >
-          {orderedToppings.map((item) => (
-            <div
-              key={Math.random()}
-              className={`${
-                orderedToppings.length > 4
-                  ? "food-container-error"
-                  : "food-container"
-              }`}
-            >
-              <p>{item.name}</p>
-              <img src={item.img} alt={item.name} />
-            </div>
-          ))}
-        </div>
+        <Ordered orderedToppings={orderedToppings} />
       </div>
       <div className="error-message-container">
         <h1 className="error">{message}</h1>
