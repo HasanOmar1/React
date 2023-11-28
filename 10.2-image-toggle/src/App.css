@@ -1,0 +1,13 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+img{
+  width: 500px;
+  height: 300px;
+  margin-left: 50px;
+  box-shadow: 3px  3px 10px 10px black;
+}
