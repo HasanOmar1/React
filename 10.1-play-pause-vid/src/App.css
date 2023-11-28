@@ -1,0 +1,21 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.video-container{
+  width: 50vw;
+}
+
+button{
+  padding: 20px;
+  margin-left: 2rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover{
+  color: red;
+}
