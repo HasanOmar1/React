@@ -4,62 +4,63 @@ import Card from "./components/Card";
 import { data } from "./components/data";
 
 function App() {
-  const { message, setMessage } = useState("");
-  const [foodImg, setFoodImg] = useState([]); // use setfoodimg({...foodImg, ...})
+  const [message, setMessage] = useState("");
+  const [orderedToppings, setOrderedToppings] = useState([]);
 
-  const card = data.map((info, i) => {
-    const foodArr = info.pizzaToppings;
-    const foodName = foodArr.map((food, i) => {
-      // const getTopping = (name) =>
-      //   foodArr.find((topping) => topping.name === name);
-      // function handleClickTopping() {
-      //   if (foodImg.length >= 5) {
-      //     setMessage(`Reached max amount of toppings`);
-      //     return;
-      //   }
-      //   if (foodArr.find((topping) => topping.name === name)) {
-      //     setMessage(`Already ordered`);
-      //   }
-      // }
+  const onClickTopping = (topping) => {
+    if (orderedToppings.length >= 5) {
+      setMessage("Max amount of topping!");
+      return;
+    }
+    if (
+      orderedToppings.find(
+        (currentTopping) => currentTopping.name === topping.name
+      )
+    ) {
+      setMessage(`Already ordered ${topping.name}!`);
+      return;
+    }
 
-      function handleImg() {
-        setFoodImg(() => {
-          return (
-            <div
-              className={`food-container ${
-                foodImg.length > 5 ? "error-img" : ""
-              }`}
-            >
-              <p>{food.name}</p>
-              <img src={food.img} alt={food.name} />
-            </div>
-          );
-        });
-      }
-
-      return (
-        <button key={i} className="btns" onClick={handleImg}>
-          {food.name}
-        </button>
-      );
-    });
-    return (
-      <div className="container" key={i}>
-        <Card name={info.name} img={info.img} food={foodName} />
-      </div>
-    );
-  });
-
-  // console.log(data);
-
+    setMessage("");
+    setOrderedToppings([...orderedToppings, topping]);
+  };
   return (
     <>
       <h1>Ninja Turtles</h1>
       <h2>Order Pizza with the turtles</h2>
-      <div className="cards-container">{card}</div>
+      <div className="cards-container">
+        {data.map((turtle) => (
+          <div key={Math.random()} className="container">
+            <Card
+              food={turtle.pizzaToppings}
+              img={turtle.img}
+              name={turtle.name}
+              onClickTopping={onClickTopping}
+            />
+          </div>
+        ))}
+      </div>
       <h1>Our order:</h1>
       <div>
-        <div className="food-img">{foodImg}</div>
+        <div
+          className={`food-img ${
+            orderedToppings.length > 5 ? "error-img" : ""
+          }`}
+        >
+          {orderedToppings.map((item) => (
+            <div
+              key={Math.random()}
+              className={`${
+                orderedToppings.length > 4
+                  ? "food-container-error"
+                  : "food-container"
+              }`}
+            >
+              <p>{item.name}</p>
+              <img src={item.img} alt={item.name} />
+            </div>
+          ))}
+        </div>
       </div>
       <div className="error-message-container">
         <h1 className="error">{message}</h1>

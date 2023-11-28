@@ -31,6 +31,8 @@ img{
     
     width: 70vw;
     height: 250px;
+    display: flex;
+    
 }
 
 .food-container p{
@@ -43,6 +45,22 @@ img{
     border-radius: 50%;
     padding-top: 10px;
 
+}
+
+.food-container-error{
+    height: 300px;
+    width: 300px;
+    background-color: red;
+    border-radius: 50%;
+    padding-top: 10px;
+}
+.food-container-error p{
+    font-size: 2rem;
+}
+
+.food-container-error img{
+    width: 200px;
+    border-radius: 50%;
 }
 
 .error-img{
@@ -62,5 +80,6 @@ img{
 }
 
 .error{
-    color: red;
+    color: yellowgreen;
+    margin-top: 4%;
 }
