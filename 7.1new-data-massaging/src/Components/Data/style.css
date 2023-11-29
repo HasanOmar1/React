@@ -9,3 +9,9 @@
 ul{
 padding: 30px;
 }
+
+.card-container{
+    background-color: olive;
+    display: flex;
+    margin-top: 10px;
+}

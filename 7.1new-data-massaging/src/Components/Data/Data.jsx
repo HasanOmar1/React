@@ -35,16 +35,18 @@ export default function Data() {
           <h2>before 1990</h2>
           {before1990.map((item, i) => {
             return (
-              <ul key={i}>
-                <li>
-                  <Card
-                    name={item.name}
-                    birthday={item.birthday}
-                    favMeat={item.favoriteFoods.meats}
-                    favFish={item.favoriteFoods.fish}
-                  />
-                </li>
-              </ul>
+              <div className="card-container">
+                <ul key={i}>
+                  <li>
+                    <Card
+                      name={item.name}
+                      birthday={item.birthday}
+                      favMeat={item.favoriteFoods.meats.join("-")}
+                      favFish={item.favoriteFoods.fish.join("-")}
+                    />
+                  </li>
+                </ul>
+              </div>
             );
           })}
         </div>
