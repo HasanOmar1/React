@@ -2,7 +2,7 @@ import React from "react";
 import { useRef } from "react";
 import { useEffect } from "react";
 
-export default function Spinner({ color }) {
+export default function SpinnerBox({ color }) {
   const box = useRef();
   useEffect(() => {
     setTimeout(() => {

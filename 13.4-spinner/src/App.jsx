@@ -1,13 +1,17 @@
 import "./App.css";
-import Spinner from "./Spinner";
+import FullCircle from "./components/FullCircle";
+import HalfCircle from "./components/HalfCircle";
+import FullDots from "./components/FullDots";
+import HalfDots from "./components/HalfDots";
 
 function App() {
-  const randomBox = Math.ceil(Math.random() * 3);
+  const randomSpinner = Math.ceil(Math.random() * 4);
   return (
     <>
-      {randomBox === 1 && <Spinner color={`black`} />}
-      {randomBox === 2 && <Spinner color={`green`} />}
-      {randomBox === 3 && <Spinner color={`gold`} />}
+      {randomSpinner === 1 && <FullCircle />}
+      {randomSpinner === 2 && <HalfCircle />}
+      {randomSpinner === 3 && <FullDots />}
+      {randomSpinner === 4 && <HalfDots />}
     </>
   );
 }
