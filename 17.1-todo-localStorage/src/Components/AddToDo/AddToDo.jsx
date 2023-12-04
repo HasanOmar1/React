@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import "./AddToDo.css";
 
 export default function AddToDo({ handleAddTask }) {
@@ -14,7 +14,7 @@ export default function AddToDo({ handleAddTask }) {
     <div>
       <form onSubmit={handleOnSubmit}>
         <p>Add todo</p>
-        <input type="text" ref={inputValue} />
+        <input type="text" ref={inputValue} required />
         <button type="Submit">Add</button>
       </form>
     </div>

@@ -13,7 +13,6 @@ function App() {
     const taskStorage = localStorage.getItem("tasks");
     const readStorage = JSON.parse(taskStorage);
     if (taskStorage) {
-      console.log(taskList);
       setTaskList(readStorage);
     }
   }, []);
