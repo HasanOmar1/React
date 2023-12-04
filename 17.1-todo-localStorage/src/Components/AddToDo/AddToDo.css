@@ -1,0 +1,20 @@
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+form input , form button{
+    padding: 5px 10px;
+    border: none;
+    
+}
+
+form button{
+    cursor: pointer;
+}
+
+form p {
+    padding-right: 10px;
+}

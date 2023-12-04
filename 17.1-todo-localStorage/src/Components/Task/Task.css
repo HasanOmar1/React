@@ -1,0 +1,12 @@
+.task-card{
+    height: 50px;
+    color: white;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+.task-card p{
+    padding-right: 20px;
+}
