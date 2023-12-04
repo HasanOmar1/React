@@ -2,30 +2,6 @@ body{
   background-color: gray;
 }
 
-.box1{
-  width: 200px;
-  height: 200px;
-  background-color: green;
-  border-radius: 10px;
-}
-.box2{
-  width: 150px;
-  height: 150px;
-  background-color: darkblue;
-  border-radius: 10px;
-}
-.box3{
-  width: 120px;
-  height: 120px;
-  background-color: darkgoldenrod;
-  border-radius: 10px;
-}
-.box4{
-  width: 100px;
-  height: 100px;
-  background-color: darkmagenta;
-  border-radius: 10px;
-}
 .slide{
   animation: animate 4s linear;
   
