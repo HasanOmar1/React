@@ -11,7 +11,7 @@ export default function Father() {
 
   return (
     <div>
-      <button onClick={handleOnClick}>New Gifts</button>
+      <button onClick={handleOnClick}>My Gifts</button>
       <Son />
     </div>
   );
