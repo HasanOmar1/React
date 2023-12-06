@@ -11,7 +11,7 @@ export default function Timer() {
 
   const { theme, changeTheme } = useThemeContext();
   return (
-    <div className={`timer-container ${theme === "dark" ? "Dark" : "light"}`}>
+    <div className={`timer-container ${theme === "dark" ? "dark" : "light"}`}>
       <p>Time Elapsed : {secondsPassed} seconds </p>
       <label id="theme-label">{theme}</label>
       <input type="checkbox" onClick={changeTheme} />

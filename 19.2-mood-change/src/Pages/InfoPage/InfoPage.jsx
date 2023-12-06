@@ -6,7 +6,7 @@ import AnimalPage from "../AnimalPage/AnimalPage";
 import { useChangePage } from "../../Contexts/ChangePageContext";
 export default function InfoPage() {
   const { theme } = useThemeContext();
-  const { currentPage, changePage } = useChangePage();
+  const { changePage } = useChangePage();
 
   return (
     <main className={`InfoPage ${theme === "dark" ? "dark" : "light"}`}>
