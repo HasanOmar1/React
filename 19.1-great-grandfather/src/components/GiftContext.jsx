@@ -3,12 +3,9 @@ const GiftsContext = createContext();
 
 export default function GiftProvider({ children }) {
   const [gifts, setGifts] = useState([]);
-  const contextValue = {
-    gifts,
-    setGifts,
-  };
+
   return (
-    <GiftsContext.Provider value={contextValue}>
+    <GiftsContext.Provider value={{ gifts, setGifts }}>
       {children}
     </GiftsContext.Provider>
   );

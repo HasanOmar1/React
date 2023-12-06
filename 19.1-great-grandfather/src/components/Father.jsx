@@ -4,6 +4,7 @@ import { GiftsContext } from "./GiftContext";
 
 export default function Father() {
   const { gifts, setGifts } = useContext(GiftsContext);
+  console.log(gifts);
 
   const handleOnClick = () => {
     setGifts(["car", "house", "plane"]);
