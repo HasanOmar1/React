@@ -1,0 +1,14 @@
+.timer-container{
+    padding-top: 100px;
+    display: flex;
+    padding-bottom: 50px;
+
+
+}
+
+.timer-container label{
+    padding-left: 30px;
+    padding-right: 10px;
+    
+  }
+

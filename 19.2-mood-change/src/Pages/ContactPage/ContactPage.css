@@ -1,0 +1,27 @@
+.ContactPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;    
+    width: 100vw;
+    
+}
+
+.ContactPage form{
+
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-left: 50px;
+    gap: 10px;
+}
+
+.ContactPage input{
+    width: 200px;
+}
+
+.ContactPage textarea{
+    width: 200px;
+}
