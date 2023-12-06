@@ -21,10 +21,10 @@ function App() {
   }, []);
 
   useEffect(() => {
-    if (inputVal.length === 0) {
+    if (!inputVal) {
       setFetchedData(originalData);
     } else {
-      const filteredNames = fetchedData.filter((data) => {
+      const filteredNames = originalData.filter((data) => {
         return (
           data.name.first.toLowerCase().includes(inputVal.toLowerCase()) ||
           data.name.last.toLowerCase().includes(inputVal.toLowerCase())
@@ -34,13 +34,13 @@ function App() {
     }
   }, [inputVal]);
 
-  function handleOnChange(e) {
-    setInputVal(e.target.value);
-  }
-
   return (
     <>
-      <input type="text" value={inputVal} onChange={handleOnChange} />
+      <input
+        type="text"
+        value={inputVal}
+        onChange={(e) => setInputVal(e.target.value)}
+      />
       <div className="container">
         {fetchedData.map((data, i) => {
           return (
