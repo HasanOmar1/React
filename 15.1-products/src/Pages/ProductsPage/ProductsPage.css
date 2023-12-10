@@ -1,0 +1,9 @@
+.ProductsPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+    padding-top: 5%;
+    font-size: 2rem;
+}

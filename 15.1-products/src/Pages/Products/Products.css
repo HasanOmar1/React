@@ -1,0 +1,23 @@
+.Products{
+    text-align: center;
+}
+
+.Products .page-title{
+    font-size: 4rem;
+    padding-top: 5%;
+}
+
+.Products .product-names{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding-top: 2rem;
+    font-size: 2rem;
+    color: gold;
+    cursor: pointer;
+
+}
+.Products .links{
+    color: gold;
+    text-decoration: none;
+}

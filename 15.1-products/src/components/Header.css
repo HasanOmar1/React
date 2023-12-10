@@ -1,0 +1,18 @@
+.Header{
+    background-color: rgb(239, 154, 51);
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 2rem;
+    
+}
+.Header h3{
+    padding: 0 10px;
+}
+.Header h3:hover{
+    background-color: rgb(53, 133, 133);
+    cursor: pointer;
+}
+
