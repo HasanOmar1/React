@@ -1,15 +1,18 @@
 import "./Header.css";
 import { Link } from "react-router-dom";
+import pagesArr from "../pages";
+
 export default function Header() {
+  const [home, productPage] = pagesArr;
   return (
     <nav className="Header">
       <h3>
-        <Link to={"/"} className="link">
+        <Link to={home} className="link">
           Home
         </Link>
       </h3>
       <h3>
-        <Link to={"/products"} className="link">
+        <Link to={productPage} className="link">
           Products
         </Link>
       </h3>

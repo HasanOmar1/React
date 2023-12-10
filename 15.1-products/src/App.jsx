@@ -5,15 +5,18 @@ import Products from "./Pages/Products/Products";
 import Header from "./components/Header";
 import NotFoundPage from "./Pages/NotFoundPage";
 import ProductsPage from "./Pages/ProductsPage/ProductsPage";
+import pagesArr from "./pages";
 
 function App() {
+  const [home, productPage] = pagesArr;
+
   return (
     <>
       <Header />
       <Routes>
-        <Route path="/" exact element={<Home />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/products/:id" element={<ProductsPage />} />
+        <Route path={home} exact element={<Home />} />
+        <Route path={productPage} element={<Products />} />
+        <Route path={`${productPage}/:id`} element={<ProductsPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </>

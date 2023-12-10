@@ -1,7 +1,9 @@
 import "./Products.css";
 import items from "../../store";
 import { Link } from "react-router-dom";
+import pagesArr from "../../pages";
 export default function Products() {
+  const [home, productPage] = pagesArr;
   console.log(items);
   return (
     <main className="Products">
@@ -12,7 +14,7 @@ export default function Products() {
             <Link
               className="links"
               key={product.id}
-              to={`/products/${product.id}`}
+              to={`${productPage}/${product.id}`}
               state={{ product }}
             >
               <h3>{product.title}</h3>
