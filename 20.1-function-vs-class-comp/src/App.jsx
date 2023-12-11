@@ -1,21 +1,21 @@
-import { useState } from "react";
+// import { useState } from "react";
 import "./App.css";
 import "./style.css";
 import ClassCounter from "./Class";
 
 function App() {
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
 
-  function increment() {
-    if (count < 10 && count >= -10) {
-      setCount((count) => count + 1);
-    }
-  }
-  function decrement() {
-    if (count <= 10 && count > -10) {
-      setCount((count) => count - 1);
-    }
-  }
+  // function increment() {
+  //   if (count < 10 && count >= -10) {
+  //     setCount((count) => count + 1);
+  //   }
+  // }
+  // function decrement() {
+  //   if (count <= 10 && count > -10) {
+  //     setCount((count) => count - 1);
+  //   }
+  // }
 
   return (
     <>
