@@ -39,7 +39,7 @@ class ShowTime extends Component {
         <div className="inputs-container">
           <label htmlFor="seconds">Seconds :</label>
           <input
-            type="text"
+            type="number"
             name="seconds"
             id="seconds"
             value={this.state.seconds}
@@ -47,7 +47,7 @@ class ShowTime extends Component {
           />
           <label htmlFor="minutes">Minutes :</label>
           <input
-            type="text"
+            type="number"
             name="minutes"
             id="minutes"
             value={this.state.minutes}
@@ -55,7 +55,7 @@ class ShowTime extends Component {
           />
           <label htmlFor="hours">Hours :</label>
           <input
-            type="text"
+            type="number"
             name="hours"
             id="hours"
             value={this.state.hours}
