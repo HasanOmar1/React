@@ -1,0 +1,16 @@
+body{
+  background-color: gray;
+}
+
+.slide{
+  animation: animate 4s linear;
+  
+}
+@keyframes animate {
+  to{
+    transform: translateX(300%);
+
+  }
+
+}
+

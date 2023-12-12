@@ -22,7 +22,6 @@ class Todo extends Component {
     });
 
     this.setState({ dataArr: newState });
-    // console.log(newState);
   };
   render() {
     //   console.log(this.state.dataArr);
