@@ -3,8 +3,6 @@ import { useState } from "react";
 export const useCounter = (initialValue = 0) => {
   const [counter, setCounter] = useState(initialValue);
 
-  const value = counter;
-
   const addOne = () => {
     setCounter((prevCount) => prevCount + 1);
   };
@@ -18,5 +16,5 @@ export const useCounter = (initialValue = 0) => {
     setCounter((prevCount) => prevCount / 2);
   };
 
-  return [value, addOne, removeOne, double, divide];
+  return [counter, addOne, removeOne, double, divide];
 };
