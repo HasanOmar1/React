@@ -9,7 +9,7 @@ export default function FetchJoke2() {
   return (
     <div>
       <h1>Data from Postman random Jokes api</h1>
-      <h2>{isLoading && <h2>Fetching Joke</h2>}</h2>
+      <h2>{!isLoading && <h2>Fetching Joke</h2>}</h2>
       <h2>{data?.setup}</h2>
       <h2>{data?.punchline}</h2>
     </div>
