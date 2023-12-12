@@ -1,0 +1,36 @@
+.AnimalsPage{
+    
+    width: 100%;
+    height: 100%;
+}
+.AnimalsPage .animals-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:30px;
+    gap: 20px;
+
+}
+
+.AnimalsPage .delete,
+.AnimalsPage .update,
+.AnimalsPage .create{
+    padding: 5px 20px;
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    color: greenyellow;
+    cursor: pointer;
+}
+
+.AnimalsPage .update{
+    background-color: green;
+    color: white;
+}
+
+.AnimalsPage .create{
+    background-color: brown;
+    margin-left: 45%;
+    margin-top: 20px;
+
+}

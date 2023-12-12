@@ -1,4 +1,18 @@
 .DataPage{
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding-top: 150px;
+gap: 30px;
+    
+}
 
+.DataPage button{
+    padding: 10px 40px;
+    cursor: pointer;
+ 
     
 }
