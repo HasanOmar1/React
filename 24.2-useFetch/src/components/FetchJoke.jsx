@@ -9,6 +9,7 @@ export default function FetchJoke() {
   return (
     <div>
       <h1>Data from Chuck Norris Jokes</h1>
+      {isLoading && <h2>Fetching Joke</h2>}
       <h3>{data?.value}</h3>
     </div>
   );
