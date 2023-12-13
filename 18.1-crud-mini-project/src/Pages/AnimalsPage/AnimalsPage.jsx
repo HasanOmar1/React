@@ -18,7 +18,7 @@ export default function AnimalsPage() {
         return (
           <div key={animals.id} className="animals-container">
             <Link
-              to={`/animals/${animals.name}`}
+              to={`/animals/${animals.id}`}
               state={{ animals }}
               className="link"
             >
