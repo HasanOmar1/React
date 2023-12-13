@@ -7,7 +7,7 @@ export default function DataPage() {
 
   return (
     <main className="DataPage">
-      <h1>Look for an Animal?</h1>
+      <h1>Looking for an Animal?</h1>
       <Link to={"/animals"}>
         <button>CLICK HERE</button>
       </Link>
