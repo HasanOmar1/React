@@ -18,7 +18,7 @@ function App() {
       <Routes>
         <Route path={"/"} exact element={<DataPage />} />
         <Route path={"/animals"} element={<AnimalsPage />} />
-        <Route path={"/animals/:id"} element={<AnimalsInfo />} />
+        <Route path={"/animals/:name"} element={<AnimalsInfo />} />
       </Routes>
     </>
   );
