@@ -8,7 +8,7 @@ import AnimalsInfo from "./Pages/AnimalsInfo/AnimalsInfo";
 
 function App() {
   //read = get
-  //create = post
+  //post = create
   //put = update
   //delete = delete
 
