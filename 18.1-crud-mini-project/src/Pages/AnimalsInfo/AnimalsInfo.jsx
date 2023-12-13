@@ -1,8 +1,10 @@
 import "./AnimalsInfo.css";
-import { useLocation } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 
 export default function AnimalsInfo() {
   const location = useLocation();
+  const { id } = useParams();
+  console.log(id);
   console.log(location);
 
   return (
