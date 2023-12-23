@@ -8,7 +8,7 @@ export default function DataProvider({ children }) {
 
   //read = get
   //create = post
-  //put = update
+  //update = put
   //delete = delete
 
   async function fetchData() {
